@@ -1,6 +1,6 @@
 {
   "name": "brei-sass-mixins",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "BarkleyREI sass mixins",
   "scripts": {
     "test": "exit 0"
