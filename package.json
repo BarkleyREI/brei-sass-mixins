@@ -1,18 +1,18 @@
 {
   "name": "brei-sass-mixins",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "BarkleyREI sass mixins",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nessthehero/brei-sass-mixins.git"
+    "url": "https://github.com/BarkleyREI/brei-sass-mixins.git"
   },
   "author": "Ian Moffitt <nessthehero@gmail.com> (http://www.ianmoffitt.co/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nessthehero/brei-sass-mixins/issues"
+    "url": "https://github.com/BarkleyREI/brei-sass-mixins/issues"
   },
-  "homepage": "https://github.com/nessthehero/brei-sass-mixins#readme"
+  "homepage": "https://github.com/BarkleyREI/brei-sass-mixins"
 }
