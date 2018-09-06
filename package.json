@@ -1,18 +1,29 @@
 {
-  "name": "brei-sass-mixins",
-  "version": "1.1.1",
-  "description": "BarkleyREI sass mixins",
-  "scripts": {
-    "test": "exit 0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BarkleyREI/brei-sass-mixins.git"
-  },
-  "author": "Ian Moffitt <nessthehero@gmail.com> (http://www.ianmoffitt.co/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BarkleyREI/brei-sass-mixins/issues"
-  },
-  "homepage": "https://github.com/BarkleyREI/brei-sass-mixins"
+	"name": "brei-sass-mixins",
+	"version": "1.2.0",
+	"description": "BarkleyREI sass mixins",
+	"scripts": {
+		"test": "exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BarkleyREI/brei-sass-mixins.git"
+	},
+	"author": "Ian Moffitt <nessthehero@gmail.com> (http://www.ianmoffitt.co/)",
+	"contributors": [
+		{
+			"name": "Ian Moffitt",
+			"email": "nessthehero@gmail.com",
+			"url": "https://github.com/nessthehero"
+		},
+		{
+			"name": "Sean Stacho",
+			"url": "https://github.com/Sean-BREI"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BarkleyREI/brei-sass-mixins/issues"
+	},
+	"homepage": "https://github.com/BarkleyREI/brei-sass-mixins"
 }
