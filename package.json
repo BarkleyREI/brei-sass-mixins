@@ -3,7 +3,7 @@
 	"version": "1.2.1",
 	"description": "BarkleyREI sass mixins",
 	"scripts": {
-		"test": "exit 0"
+		"test": "mocha"
 	},
 	"repository": {
 		"type": "git",
@@ -25,5 +25,11 @@
 	"bugs": {
 		"url": "https://github.com/BarkleyREI/brei-sass-mixins/issues"
 	},
-	"homepage": "https://github.com/BarkleyREI/brei-sass-mixins"
+	"homepage": "https://github.com/BarkleyREI/brei-sass-mixins",
+	"devDependencies": {
+		"mocha": "6.0.2",
+		"yeoman-assert": "3.1.1",
+		"fs": "0.0.1-security",
+		"lodash": "4.17.11"
+	}
 }
