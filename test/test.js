@@ -1,100 +1,44 @@
 /*global describe, it, require, __dirname*/
 
-const assert = require('yeoman-assert');
-const fs = require('fs');
-const _ = require('lodash');
+'use strict';
+
+const util = require('brei-util');
 
 const root = __dirname + '/..';
 
-const ignored = [
-	'.git',
-	'.idea',
-	'node_modules',
-	'.DS_Store'
-];
-
-let rootFiles = [
-	'.github',
-	'test',
+let valid = [
+	{
+		'.github': [
+			'CONTRIBUTING.md',
+			'ISSUE_TEMPLATE.md',
+			'PULL_REQUEST_TEMPLATE.md'
+		]
+	},
+	'.gitignore',
 	'.travis.yml',
+	'LICENSE',
+	'README.md',
 	'_headers.scss',
 	'_layer.scss',
 	'_links.scss',
 	'_mixins.scss',
-	'LICENSE',
 	'package.json',
-	'README.md'
-];
-
-let githubFiles = [
-	'CONTRIBUTING.md',
-	'ISSUE_TEMPLATE.md',
-	'PULL_REQUEST_TEMPLATE.md'
-];
-
-let testFiles = [
-	'test.js'
-];
-
-function has(list, arr) {
-	'use strict';
-
-	let diff = _.difference(list, arr);
-
-	if (diff.length === 0) {
-		return true;
-	} else {
-		throw new Error('Missing: ' + diff);
+	{
+		test: [
+			'test.js'
+		]
 	}
-
-}
-
-function hasOnly(list, arr) {
-	'use strict';
-
-	// Remove ignored files and directories
-	arr = _.difference(arr, ignored);
-
-	let forward = _.difference(list, arr);
-	let backward = _.difference(arr, list);
-
-	return forward.length === backward.length;
-
-}
-
-function filesArray(dir) {
-	'use strict';
-
-	return fs.readdirSync(dir);
-
-}
+];
 
 describe('Verify file and folder structure', function () {
-	'use strict';
 
-	it('Root file check', function () {
+	it('Deep object comparison check', function () {
 
-		let files = filesArray(root);
-		
-		console.log(files, rootFiles);
+		let ttree = util.tree(root)
 
-		assert(has(rootFiles, files));
+		let files = util.ftree(ttree);
 
-	});
-
-	it('Github check', function () {
-
-		let files = filesArray(root + '/.github');
-
-		assert(hasOnly(githubFiles, files));
-
-	});
-
-	it('Test check', function () {
-
-		let files = filesArray(root + '/test');
-
-		assert(hasOnly(testFiles, files));
+		util.assert(util.deep(valid, files));
 
 	});
 
