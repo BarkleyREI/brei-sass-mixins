@@ -3,7 +3,8 @@
 	"version": "2.0.0",
 	"description": "BarkleyREI sass mixins",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"postinstall": "npm test"
 	},
 	"repository": {
 		"type": "git",
