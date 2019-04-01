@@ -2,8 +2,7 @@
 
 'use strict';
 
-// const util = require('brei-util');
-const util = require('../../brei-util/index.js');
+const util = require('brei-util');
 const u = require('util');
 
 const root = __dirname + '/..';
@@ -32,7 +31,7 @@ let valid = [
 	}
 ];
 
-describe('Verify file and folder structure', function () {
+describe('brei-sass-mixins -- Verify file and folder structure', function () {
 
 	it('Deep object comparison check', function () {
 
@@ -40,13 +39,15 @@ describe('Verify file and folder structure', function () {
 
 		let files = util.ftree(ttree);
 
+		let vvalid = util.filterObject(valid);
+
 		console.log('\n------- files --------\n');
 		console.log(u.inspect(files, false, null));
 
-		console.log('\n------- valid --------\n');
-		console.log(u.inspect(valid, false, null));
+		console.log('\n------- vvalid --------\n');
+		console.log(u.inspect(vvalid, false, null));
 
-		util.assert(util.deep(valid, files));
+		util.assert(util.deep(vvalid, files));
 
 	});
 
