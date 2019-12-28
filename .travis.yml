@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '9'
+  - '10'
+  - '11'
+  - 'lts/*'
+deploy:
+  provider: npm
+  email: nessthehero@gmail.com
+  api_key:
+    secure: fj0wcM8pIUVopV1MmM0J9rPeITZnuzs4/krwhklDvJA0tpKhw5QfaB3UU0/og1pWAxwl3Jeca5ZAUpPLcedb3oICPeElGf763fjBGOQ03zP7HOUPnyqJX08K9plBOg0nTjMeeJsuTNE9nA0hXmV0Xp0maQ98KFtG6TiqUcC580Ohbn+Q20xGQnCRtxR0+XPS/lTsVZQl1UQIpbnKu9+DSzfDFfN4ZOsMC3MN6L3IL2Vd85oDU79W/zSmuYl3zfb5Tr48VcDFtICJWiyX6ZwDXt25SBYXlcFWeuUXyiIrGjCdJSzzi9TT/NeVD9kzz1mcnQBLZTAYxrrvVEkuaGSeCLSLjHDLdYSrJJ1eQ9TMrEaALndX4ovu9fjXdtF6RPUzaBs14gHYOJnC8ib2DtH54XAWZLVaolqbUGRrSVTip95U7yTiwosJK5IVokYxm6FL1QInuJXq2f+OCNpWIPXYXdenF5szq9GyZGGJbh/FiQQH63BuPOpMiR124GC4BK2fgpLm1WOMJAAtoUxPf74VaU70tj0X6EzwfoCzN9o9uYfaIP8537F/6MjSoHay7B1PUjtDcTcbQXmRCC2IlPVcPCqms3g9Dm0WVdry9pSt8fh92B6Yl9emD7fJcviJDQF3wwOfZhPRxgHGNaiAu/S/KGH8Yu2zBVd/JoJW7265ZsM=
+  on:
+    tags: true
+    repo: BarkleyREI/brei-sass-mixins
