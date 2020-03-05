@@ -1,6 +1,6 @@
 {
 	"name": "brei-sass-mixins",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "BarkleyREI sass mixins",
 	"scripts": {
 		"test": "mocha",
@@ -28,7 +28,7 @@
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-mixins",
 	"devDependencies": {
-		"mocha": "~7.0.1",
+		"mocha": "~7.1.0",
 		"brei-util": "^1.0.6"
 	}
 }
