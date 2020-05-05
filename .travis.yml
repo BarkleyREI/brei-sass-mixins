@@ -1,14 +1,17 @@
 language: node_js
 node_js:
-  - '9'
-  - '10'
-  - '11'
-  - 'lts/*'
+- '10'
+- '11'
+- '12'
+- '13'
+- lts/*
+- node
 deploy:
   provider: npm
   email: nessthehero@gmail.com
   api_key:
-    secure: fj0wcM8pIUVopV1MmM0J9rPeITZnuzs4/krwhklDvJA0tpKhw5QfaB3UU0/og1pWAxwl3Jeca5ZAUpPLcedb3oICPeElGf763fjBGOQ03zP7HOUPnyqJX08K9plBOg0nTjMeeJsuTNE9nA0hXmV0Xp0maQ98KFtG6TiqUcC580Ohbn+Q20xGQnCRtxR0+XPS/lTsVZQl1UQIpbnKu9+DSzfDFfN4ZOsMC3MN6L3IL2Vd85oDU79W/zSmuYl3zfb5Tr48VcDFtICJWiyX6ZwDXt25SBYXlcFWeuUXyiIrGjCdJSzzi9TT/NeVD9kzz1mcnQBLZTAYxrrvVEkuaGSeCLSLjHDLdYSrJJ1eQ9TMrEaALndX4ovu9fjXdtF6RPUzaBs14gHYOJnC8ib2DtH54XAWZLVaolqbUGRrSVTip95U7yTiwosJK5IVokYxm6FL1QInuJXq2f+OCNpWIPXYXdenF5szq9GyZGGJbh/FiQQH63BuPOpMiR124GC4BK2fgpLm1WOMJAAtoUxPf74VaU70tj0X6EzwfoCzN9o9uYfaIP8537F/6MjSoHay7B1PUjtDcTcbQXmRCC2IlPVcPCqms3g9Dm0WVdry9pSt8fh92B6Yl9emD7fJcviJDQF3wwOfZhPRxgHGNaiAu/S/KGH8Yu2zBVd/JoJW7265ZsM=
+    secure: KrRUHNp8vGZSFK2Fh+BQsWM6MswJiWR3ROqFAgjndNAAoJiN6GDZ7n3GAJlFyxoC2+z07fhRvyBmFr8g6JdTBtvNWcmc05J1acxLqCP6nS4qMYvsFE6BI0dXhGcqMsAilDgsGRFiuDI1ehU/VApEeu8J8OfavhHbVIBSTuOI7hD5UX7OH4i4FDPEFPJM8ycFwJLD9yNRGM6MBiJgMzypW8tedcBoMBX9GnONLcrhbi+V+aruL3hvjWu42EkgLStoTMYGwSnWauyaIIO7ncYDFz3dhbkE85Zj8caNfdD1zv0cBaEDzUUrll0X38kG5keOahDQwUra8x0BIlVhLMQP9J1I5hgin4jzoAB5E4EyKG2cRXzOIP130tZcXURIWBN04eXSCcmPklHUla52CseMnqrrFGvHydBmJnopxsznoP0Q9Ww1xRiYg+7Jh3zUdC1UvMqftg5GYwmapbiCVZvKIrAzK1hMN8utA3scvjQ3NBA8UCwTryx5o5/+01ITq+lorTtjv+XAuWISxhPtoL3jjE0GuKweHULJW3r5r4Hdj5yKYwWKm0RbDaUXJ4HN1vof81ideYT5nop8YVWMBiGy4hsSSqarGVv+53mNiTbKT70Rfzb3YJm9m8pzPpv0xT7pvmGfvS0KJAwdw0/NdcjXvB0cSQq3HJ9/AzwBrVLzU3Y=
   on:
     tags: true
     repo: BarkleyREI/brei-sass-mixins
+  skip_cleanup: 'true'
