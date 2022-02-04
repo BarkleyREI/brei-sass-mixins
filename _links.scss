@@ -1,6 +1,5 @@
 // LINKS
-@mixin links ($link, $visited, $hover, $active) {
-
+@mixin links($link, $visited, $hover, $active) {
 	color: $link;
 
 	&:visited {
@@ -15,5 +14,4 @@
 	&:focus {
 		color: $active;
 	}
-	
 }
