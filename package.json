@@ -27,6 +27,13 @@
 		"url": "https://github.com/BarkleyREI/brei-sass-mixins/issues"
 	},
 	"homepage": "https://github.com/BarkleyREI/brei-sass-mixins",
+	"devDependencies": {
+		"mocha": "~9.2.0",
+		"postcss-scss": "~4.0.3",
+		"stylelint": "~14.3.0",
+		"stylelint-formatter-pretty": "^3.1.0",
+		"stylelint-scss": "~4.1.0"
+	},
 	"dependencies": {
 		"brei-util": "^1.0.6",
 		"mocha": "~7.1.0"
