@@ -4,7 +4,7 @@
 	"description": "BarkleyREI sass mixins",
 	"scripts": {
 		"test": "mocha",
-		"postinstall": "npm test"
+		"prepublishOnly": "npm test"
 	},
 	"repository": {
 		"type": "git",
