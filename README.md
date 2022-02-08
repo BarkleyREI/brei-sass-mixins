@@ -5,7 +5,7 @@
 
 [version]: http://img.shields.io/npm/v/brei-sass-mixins.svg?style=flat-square
 
-SASS Mixins
+Custom SASS Mixins for BarkleyREI projects.
 
 Make sure \_mixins.scss is loading your mixin.
 
